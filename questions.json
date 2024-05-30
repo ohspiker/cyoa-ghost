@@ -1,0 +1,403 @@
+[
+  {
+    "id": 1,
+    "scenario": "As the sun sets, you stand before the imposing facade of the Grand Orpheum Theatre. The air is heavy with the scent of rain and the whispers of forgotten performances. The ornate marquee, now rusted and overgrown with ivy, still holds an air of faded grandeur. You take a deep breath and push open the creaking doors. Inside, the darkness seems to welcome you with open arms.<br><br>What do you do?",
+    "choices": [
+      { "text": "Turn on your flashlight and explore the lobby", "nextId": 2 },
+      { "text": "Call out to see if anyone is there", "nextId": 3 }
+    ]
+  },
+  {
+    "id": 2,
+    "scenario": "The beam of your flashlight cuts through the dusty air, illuminating the grand lobby. The once lavish decor now lies in ruins, with shattered chandeliers and tattered drapes. As you move further in, you hear a soft, distant melody echoing through the halls.<br><br>What do you do?",
+    "choices": [
+      { "text": "Follow the melody towards the main hall", "nextId": 4 },
+      { "text": "Investigate the source of the sound", "nextId": 5 }
+    ]
+  },
+  {
+    "id": 3,
+    "scenario": "Your voice echoes through the vast, empty space, but no response comes. The silence is oppressive, almost as if the theatre itself is holding its breath. Suddenly, you hear a faint whisper, barely audible, coming from the direction of the stage.<br><br>What do you do?",
+    "choices": [
+      { "text": "Approach the stage cautiously", "nextId": 6 },
+      { "text": "Ignore the whisper and explore the seating area", "nextId": 7 }
+    ]
+  },
+  {
+    "id": 4,
+    "scenario": "You follow the melody, which leads you to the main hall. The seats are covered in dust, and the grand chandelier above sways slightly as if disturbed by an unseen force. You see a piano on the stage, its keys moving as if being played by invisible hands.<br><br>What do you do?",
+    "choices": [
+      { "text": "Approach the piano", "nextId": 8 },
+      { "text": "Leave the main hall and explore backstage", "nextId": 9 }
+    ]
+  },
+  {
+    "id": 5,
+    "scenario": "You follow the sound to a small room off the lobby. Inside, you find an old gramophone playing a haunting melody. The room is filled with old theatre props and costumes.<br><br>What do you do?",
+    "choices": [
+      { "text": "Examine the gramophone", "nextId": 10 },
+      { "text": "Turn off the gramophone", "nextId": 11 }
+    ]
+  },
+  {
+    "id": 6,
+    "scenario": "As you approach the stage, the whispering grows louder. You can now make out words, though they are still too faint to understand. A ghostly figure appears, barely visible, near the edge of the stage.<br><br>What do you do?",
+    "choices": [
+      { "text": "Confront the ghost", "nextId": 12 },
+      { "text": "Try to communicate with the ghost", "nextId": 13 },
+      { "text": "Fight the ghost", "nextId": 14 }
+    ]
+  },
+  {
+    "id": 7,
+    "scenario": "You ignore the whisper and explore the seating area. The seats are covered in dust, and the air is thick with the scent of decay. As you move through the rows, you notice a flickering light in one of the private boxes.<br><br>What do you do?",
+    "choices": [
+      { "text": "Investigate the private box", "nextId": 15 },
+      { "text": "Return to the lobby", "nextId": 16 }
+    ]
+  },
+  {
+    "id": 8,
+    "scenario": "As you approach the piano, the melody stops abruptly. The keys are still moving, but no sound comes out. You feel a cold breeze behind you.<br><br>What do you do?",
+    "choices": [
+      { "text": "Turn around", "nextId": 17 },
+      { "text": "Touch the piano keys", "nextId": 18 }
+    ]
+  },
+  {
+    "id": 9,
+    "scenario": "You leave the main hall and find yourself in a narrow corridor leading backstage. The corridor is filled with old scenery and equipment. As you move through, you hear a faint, eerie singing.<br><br>What do you do?",
+    "choices": [
+      { "text": "Follow the singing", "nextId": 19 },
+      { "text": "Search the area for clues", "nextId": 20 }
+    ]
+  },
+  {
+    "id": 10,
+    "scenario": "You examine the gramophone and find that it is playing a record of a haunting melody. The label on the record reads 'Eris' Lament.' You feel a sudden chill as you read the name.<br><br>What do you do?",
+    "choices": [
+      { "text": "Listen to the record", "nextId": 21 },
+      { "text": "Look around the room for more clues", "nextId": 22 }
+    ]
+  },
+  {
+    "id": 11,
+    "scenario": "You turn off the gramophone, and the room falls into an eerie silence. The temperature seems to drop, and you hear an angry whisper behind you, 'How dare you silence me!' You feel a cold hand on your shoulder.<br><br>What do you do?",
+    "choices": [
+      { "text": "Turn around slowly", "nextId": 23 },
+      { "text": "Run out of the room", "nextId": 24 }
+    ]
+  },
+  {
+    "id": 12,
+    "scenario": "You confront the ghost, demanding to know why it is haunting the theatre. The ghostly figure becomes more distinct, revealing a woman with a twisted, angry expression. 'You dare to challenge me?' she hisses.<br><br>What do you do?",
+    "choices": [
+      { "text": "Ask how you can help", "nextId": 25 },
+      { "text": "Run away", "nextId": 26 },
+      { "text": "Fight the ghost", "nextId": 27 }
+    ]
+  },
+  {
+    "id": 13,
+    "scenario": "You try to communicate with the ghost, asking why it is haunting the theatre. The ghostly figure becomes more distinct, revealing a woman with a sorrowful yet enraged expression. 'You think you can understand my pain?' she snarls.<br><br>What do you do?",
+    "choices": [
+      { "text": "Ask how you can help", "nextId": 25 },
+      { "text": "Run away", "nextId": 26 }
+    ]
+  },
+  {
+    "id": 14,
+    "scenario": "You decide to fight the ghost, but your attempts are futile. The ghostly figure overwhelms you with a cold, suffocating force. As your vision fades, you hear her laugh. 'You cannot defeat me.' This is the end.",
+    "image": "img/ghost.png",
+    "choices": [
+      { "text": "Try Again?", "nextId": 1 }
+    ]
+  },
+  {
+    "id": 15,
+    "scenario": "You investigate the private box and find it filled with old playbills and photographs. The air is thick with the scent of old paper and memories. You notice a hidden compartment in the wall.<br><br>What do you do?",
+    "choices": [
+      { "text": "Open the hidden compartment", "nextId": 28 },
+      { "text": "Examine the playbills and photographs", "nextId": 29 }
+    ]
+  },
+  {
+    "id": 16,
+    "scenario": "You return to the lobby and find it unchanged. The sense of unease remains, but you are determined to uncover the theatre's secrets.<br><br>What do you do?",
+    "choices": [
+      { "text": "Search the lobby for clues", "nextId": 30 },
+      { "text": "Leave the theatre", "nextId": 31 }
+    ]
+  },
+  {
+    "id": 17,
+    "scenario": "You turn around and come face to face with a ghostly apparition. The figure looks at you with sad yet furious eyes and whispers, 'You should not have come here.'<br><br>What do you do?",
+    "choices": [
+      { "text": "Ask how you can help", "nextId": 25 },
+      { "text": "Run away", "nextId": 26 }
+    ]
+  },
+  {
+    "id": 18,
+    "scenario": "You touch the piano keys, and a haunting melody fills the room. The ghostly figure reappears, watching you with a mix of rage and sadness. 'Why do you play my song?' she demands.<br><br>What do you do?",
+    "choices": [
+      { "text": "Ask how you can help", "nextId": 25 },
+      { "text": "Run away", "nextId": 26 }
+    ]
+  },
+  {
+    "id": 19,
+    "scenario": "You follow the singing, which leads you to a small, hidden room. Inside, you find an old piano and a ghostly figure playing it. The figure looks up at you with a piercing gaze.<br><br>What do you do?",
+    "choices": [
+      { "text": "Listen to the music", "nextId": 32 },
+      { "text": "Ask the ghost to stop singing", "nextId": 33 }
+    ]
+  },
+  {
+    "id": 20,
+    "scenario": "You search the area for clues and find old playbills and photographs. They depict a vibrant theatre in its heyday, with smiling actors and bustling crowds. Among the debris, you find a diary belonging to a performer named Eris.<br><br>What do you do?",
+    "choices": [
+      { "text": "Read Eris' diary", "nextId": 34 },
+      { "text": "Take the diary and leave", "nextId": 35 }
+    ]
+  },
+  {
+    "id": 21,
+    "scenario": "You listen to the record, and the haunting melody fills the room. The ghostly figure of a woman appears, her eyes burning with anger. 'How dare you listen to my song?' she hisses. Before you can react, she lunges at you. This is the end.",
+    "image": "img/ghost.png",
+    "choices": [
+      { "text": "Try Again?", "nextId": 1 }
+    ]
+  },
+  {
+    "id": 22,
+    "scenario": "You look around the room and find old theatre props and costumes. Among them, you find a beautiful but tattered dress that seems out of place. As you examine it, a hidden door creaks open, revealing a dark passage.<br><br>What do you do?",
+    "choices": [
+      { "text": "Enter the passage", "nextId": 36 },
+      { "text": "Stay in the room", "nextId": 37 }
+    ]
+  },
+  {
+    "id": 23,
+    "scenario": "You turn around slowly and come face to face with a ghostly apparition. The figure looks at you with rage-filled eyes and whispers, 'You will pay for disturbing my music.' She reaches out with a cold, ghostly hand. This is the end.",
+    "image": "img/ghost.png",
+    "choices": [
+      { "text": "Try Again?", "nextId": 1 }
+    ]
+  },
+  {
+    "id": 24,
+    "scenario": "You run out of the room, leaving the ghostly figure behind. As you flee, the whispering fades, but the sense of unease lingers. You find yourself back in the lobby. You quickly exit the theatre, deciding it's not worth the risk.<br><br>You survived, but the mystery remains unsolved.",
+    "image": "img/leave.png",
+    "choices": [
+      { "text": "Try Again?", "nextId": 1 }
+    ]
+  },
+  {
+    "id": 25,
+    "scenario": "The ghost looks at you with burning eyes and whispers, 'Find my diary... it holds the key to my vengeance.' You remember seeing a diary in the lobby.<br><br>What do you do?",
+    "choices": [
+      { "text": "Go to the lobby and find the diary", "nextId": 20 },
+      { "text": "Ask the ghost for more details", "nextId": 38 },
+      { "text": "Promise to find the diary and leave the stage", "nextId": 39 }
+    ]
+  },
+  {
+    "id": 26,
+    "scenario": "You turn and run, leaving the ghostly figure behind. As you flee, the whispering fades, but the sense of unease lingers. You find yourself back in the lobby. You quickly exit the theatre, deciding it's not worth the risk.<br><br>You survived, but the mystery remains unsolved.",
+    "image": "img/leave.png",
+    "choices": [
+      { "text": "Try Again?", "nextId": 1 }
+    ]
+  },
+  {
+    "id": 27,
+    "scenario": "You fight the ghost, but your attempts are futile. The ghostly figure overwhelms you with a cold, suffocating force. As your vision fades, you hear her laugh. 'You cannot defeat me.' This is the end.",
+    "image": "img/leave.png",
+    "choices": [
+      { "text": "Try Again?", "nextId": 1 }
+    ]
+  },
+  {
+    "id": 28,
+    "scenario": "You open the hidden compartment and find a collection of letters and photographs. They tell the story of Eris, a performer who died mysteriously in the theatre. As you read, you realize her tragic story and the injustice she faced.<br><br>What do you do?",
+    "choices": [
+      { "text": "Leave with the letters to expose the truth", "nextId": 40 },
+      { "text": "Stay and investigate further", "nextId": 41 }
+    ]
+  },
+  {
+    "id": 29,
+    "scenario": "You examine the playbills and photographs, finding evidence of a vibrant theatre in its heyday. Among the items, you find a diary belonging to a performer named Eris. You read the diary and discover the secrets Eris had kept.<br><br>What do you do?",
+    "choices": [
+      { "text": "Leave with the diary to expose the truth", "nextId": 42 },
+      { "text": "Stay and investigate further", "nextId": 43 }
+    ]
+  },
+  {
+    "id": 30,
+    "scenario": "You search the lobby and find old playbills and photographs. They depict a vibrant theatre in its heyday, with smiling actors and bustling crowds. Among the debris, you find a diary belonging to a performer named Eris. You read the diary and discover the secrets Eris had kept.<br><br>What do you do?",
+    "choices": [
+      { "text": "Leave with the diary to expose the truth", "nextId": 42 },
+      { "text": "Stay and investigate further", "nextId": 43 }
+    ]
+  },
+  {
+    "id": 31,
+    "scenario": "You leave the theatre, your heart pounding. Outside, the air is fresh and clear, and you feel a sense of relief. But the mystery of the haunted theatre remains unsolved.<br><br>Will you dare to return?",
+    "image": "img/leave.png",
+    "choices": [
+      { "text": "Try Again?", "nextId": 1 }
+    ]
+  },
+  {
+    "id": 32,
+    "scenario": "You listen to the music, and the ghostly figure continues to play, its sad eyes watching you. 'Do you think you can bring me peace?' she hisses. You realize that the only way to free her is to uncover her story.<br><br>What do you do?",
+    "choices": [
+      { "text": "Promise to uncover her story", "nextId": 44 }
+    ]
+  },
+  {
+    "id": 33,
+    "scenario": "You ask the ghost to stop singing, and ask it why it is haunting the theatre. The ghostly figure stops playing and looks at you with rage in its eyes. 'You do not belong here,' she whispers. You feel a darkness overtake you as you start to tremble in fear.",
+    "image": "img/ghost.png",
+    "choices": [
+      { "text": "Try Again?", "nextId": 1 }
+    ]
+  },
+  {
+    "id": 34,
+    "scenario": "You read Eris' diary and learn about her tragic past. She was a talented performer who died mysteriously in the theatre. The last entry in the diary mentions a hidden room where she kept her most prized possessions.<br><br>What do you do?",
+    "choices": [
+      { "text": "Search for the hidden room", "nextId": 45 },
+      { "text": "Take the diary and leave", "nextId": 46 }
+    ]
+  },
+  {
+    "id": 35,
+    "scenario": "You take the diary and leave the theatre. Outside, you feel the weight of Eris' story and know you must share it with the world.<br><br>As you walk away, the theatre looms behind you, a testament to the stories it holds.",
+    "image": "img/leave.png",
+    "choices": [
+      { "text": "Try Again?", "nextId": 1 }
+    ]
+  },
+  {
+    "id": 36,
+    "scenario": "You enter the dark passage and find yourself in a hidden room filled with old costumes and letters. As you explore, you feel a cold presence watching you.<br><br>What do you do?",
+    "choices": [
+      { "text": "Read the letters", "nextId": 47 },
+      { "text": "Examine the costumes", "nextId": 48 }
+    ]
+  },
+  {
+    "id": 37,
+    "scenario": "You stay in the room, but the feeling of being watched grows stronger. Suddenly, the hidden door slams shut, trapping you inside. This is the end.",
+    "image": "img/ghost.png",
+    "choices": [
+      { "text": "Try Again?", "nextId": 1 }
+    ]
+  },
+  {
+    "id": 38,
+    "scenario": "You ask the ghost for more details, and she reveals that her death was not an accident but a murder. She begs you to uncover the truth.<br><br>What do you do?",
+    "choices": [
+      { "text": "Promise to uncover the truth", "nextId": 49 }
+    ]
+  },
+  {
+    "id": 39,
+    "scenario": "You promise to find the diary and leave the stage. As you move through the theatre, you feel a sense of determination. The ghost's whispers guide you towards the lobby.<br><br>What do you do?",
+    "choices": [
+      { "text": "Search the lobby for the diary", "nextId": 30 },
+      { "text": "Leave the theatre", "nextId": 31 }
+    ]
+  },
+  {
+    "id": 40,
+    "scenario": "You leave with the letters and expose the truth about Eris' tragic death. The public is outraged, and the theatre becomes a historical site. Eris' spirit is finally at peace.",
+    "image": "img/leave.png",
+    "choices": [
+      { "text": "Try Again?", "nextId": 1 }
+    ]
+  },
+  {
+    "id": 41,
+    "scenario": "You stay despite Eris' request to leave, and the ghost becomes more aggressive. She does not want you to linger. Suddenly, the walls start to close in, and you realize too late that you are trapped. This is the end.",
+    "image": "img/ghost.png",
+    "choices": [
+      { "text": "Try Again?", "nextId": 1 }
+    ]
+  },
+  {
+    "id": 42,
+    "scenario": "You leave with the diary and expose the truth about Eris' tragic death. The public is outraged, and the theatre becomes a historical site. Eris' spirit is finally at peace.<br><br>You did it. This is a good ending.",
+    "image": "img/leave.png",
+    "choices": [
+      { "text": "Try Again?", "nextId": 1 }
+    ]
+  },
+  {
+    "id": 43,
+    "scenario": "You stay despite Eris' request to leave, and the ghost becomes more aggressive. She does not want you to linger. Suddenly, the walls start to close in, and you realize too late that you are trapped. This is the end.",
+    "image": "img/ghost.png",
+    "choices": [
+      { "text": "Try Again?", "nextId": 1 }
+    ]
+  },
+  {
+    "id": 44,
+    "scenario": "You promise to uncover her story, and as you look deeper into the theatre's history, you find the evidence needed to clear her name. Eris' spirit appears before you, thanking you for bringing her peace.<br><br>This is a good ending.",
+    "image": "img/leave.png",
+    "choices": [
+      { "text": "Try Again?", "nextId": 1 }
+    ]
+  },
+  {
+    "id": 45,
+    "scenario": "You search for the hidden room and find it behind a large curtain. Inside, you find Eris' most prized possessions, including letters that reveal the truth about her death.<br><br>What do you do?",
+    "choices": [
+      { "text": "Leave with the letters to expose the truth", "nextId": 40 },
+      { "text": "Stay and investigate further", "nextId": 41 }
+    ]
+  },
+  {
+    "id": 46,
+    "scenario": "You take the diary and leave the theatre. Outside, you feel the weight of Eris' story and know you must share it with the world.<br><br>As you walk away, the theatre looms behind you, a testament to the stories it holds.",
+    "image": "img/leave.png",
+    "choices": [
+      { "text": "Try Again?", "nextId": 1 }
+    ]
+  },
+  {
+    "id": 47,
+    "scenario": "You read the letters and discover the truth about Eris' death. She was murdered, and her spirit has been trapped in the theatre ever since.<br><br>What do you do?",
+    "choices": [
+      { "text": "Leave with the letters to expose the truth", "nextId": 40 },
+      { "text": "Stay and investigate further", "nextId": 41 }
+    ]
+  },
+  {
+    "id": 48,
+    "scenario": "You examine the costumes and find a hidden locket. Inside the locket is a picture of Eris and a note that reveals her tragic story.<br><br>What do you do?",
+    "choices": [
+      { "text": "Leave with the locket to expose the truth", "nextId": 40 },
+      { "text": "Stay and investigate further", "nextId": 41 }
+    ]
+  },
+  {
+    "id": 49,
+    "scenario": "You promise to uncover the truth, and as you investigate further, you find evidence that reveals the true culprit behind Eris' death. You take this evidence to the authorities, who finally clear her name. Eris' spirit appears before you, smiling with gratitude.<br><br>This is a good ending.",
+    "image": "img/leave.png",
+    "choices": [
+      { "text": "Try Again?", "nextId": 1 }
+    ]
+  },
+  {
+    "id": 50,
+    "scenario": "You search for another exit and find a hidden door leading to a secret passage. As you follow the passage, you find yourself in a hidden room filled with Eris' possessions. You realize you have uncovered the heart of the mystery.<br><br>What do you do?",
+    "choices": [
+      { "text": "Examine the possessions", "nextId": 47 },
+      { "text": "Leave the theatre", "nextId": 31 }
+    ]
+  }
+]
