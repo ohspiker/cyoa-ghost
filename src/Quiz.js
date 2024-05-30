@@ -62,7 +62,7 @@ const Quiz = () => {
                 dangerouslySetInnerHTML={{ __html: currentScenario.scenario }}
               />
               {currentScenario.image && (
-                <img src={`${process.env.PUBLIC_URL}/${currentScenario.image}`} alt="Scenario" className='scenario-image' />
+                <img src={`./${currentScenario.image}`} alt="Scenario" className='scenario-image' />
               )}
             </div>
             <div className='answer-section'>
