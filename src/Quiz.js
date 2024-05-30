@@ -1,18 +1,15 @@
+// src/Quiz.js
 import React, { useState, useEffect } from 'react';
 
 const Quiz = () => {
   const [currentScenario, setCurrentScenario] = useState(null);
   const [storyData, setStoryData] = useState([]);
   const [storyStarted, setStoryStarted] = useState(false);
+  const [diaryFound, setDiaryFound] = useState(false);
 
   useEffect(() => {
-    fetch(`${process.env.PUBLIC_URL}/questions.json`)
-      .then((response) => {
-        if (!response.ok) {
-          throw new Error('Network response was not ok');
-        }
-        return response.json();
-      })
+    fetch('/questions.json')
+      .then((response) => response.json())
       .then((data) => {
         setStoryData(data);
         setCurrentScenario(data.find((scenario) => scenario.id === 1)); // Start with the first scenario
@@ -22,7 +19,19 @@ const Quiz = () => {
 
   const handleChoiceClick = (nextId) => {
     const nextScenario = storyData.find((scenario) => scenario.id === nextId);
-    setCurrentScenario(nextScenario);
+
+    // Check if the next scenario involves the diary
+    if (nextScenario.scenario.includes("diary")) {
+      setDiaryFound(true);
+    }
+
+    // If the diary has been found, skip scenarios that involve finding the diary again
+    if (diaryFound && (nextId === 7 || nextId === 32 || nextId === 44)) {
+      const alternativeScenario = storyData.find((scenario) => scenario.id === 21);
+      setCurrentScenario(alternativeScenario);
+    } else {
+      setCurrentScenario(nextScenario);
+    }
   };
 
   const startStory = () => {
@@ -31,6 +40,7 @@ const Quiz = () => {
 
   const restartStory = () => {
     setCurrentScenario(storyData.find((scenario) => scenario.id === 1));
+    setDiaryFound(false);
     setStoryStarted(false);
   };
 
@@ -62,7 +72,7 @@ const Quiz = () => {
                 dangerouslySetInnerHTML={{ __html: currentScenario.scenario }}
               />
               {currentScenario.image && (
-                <img src={`./${currentScenario.image}`} alt="Scenario" className='scenario-image' />
+                <img src={currentScenario.image} alt="Scenario" className='scenario-image' />
               )}
             </div>
             <div className='answer-section'>
