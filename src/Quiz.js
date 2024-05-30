@@ -23,6 +23,7 @@ const Quiz = () => {
   }, []);
 
   const handleChoiceClick = (nextId) => {
+    console.log('Next scenario ID:', nextId);
     const nextScenario = storyData.find((scenario) => scenario.id === nextId);
 
     // Check if the next scenario involves the diary
@@ -33,8 +34,10 @@ const Quiz = () => {
     // If the diary has been found, skip scenarios that involve finding the diary again
     if (diaryFound && (nextId === 7 || nextId === 32 || nextId === 44)) {
       const alternativeScenario = storyData.find((scenario) => scenario.id === 21);
+      console.log('Skipping diary scenario, going to scenario ID 21');
       setCurrentScenario(alternativeScenario);
     } else {
+      console.log('Going to scenario ID:', nextScenario.id);
       setCurrentScenario(nextScenario);
     }
   };
