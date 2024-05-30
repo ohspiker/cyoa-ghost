@@ -1,11 +1,9 @@
-// src/Quiz.js
 import React, { useState, useEffect } from 'react';
 
 const Quiz = () => {
   const [currentScenario, setCurrentScenario] = useState(null);
   const [storyData, setStoryData] = useState([]);
   const [storyStarted, setStoryStarted] = useState(false);
-  const [diaryFound, setDiaryFound] = useState(false);
 
   useEffect(() => {
     fetch(`${process.env.PUBLIC_URL}/questions.json`)
@@ -23,23 +21,8 @@ const Quiz = () => {
   }, []);
 
   const handleChoiceClick = (nextId) => {
-    console.log('Next scenario ID:', nextId);
     const nextScenario = storyData.find((scenario) => scenario.id === nextId);
-
-    // Check if the next scenario involves the diary
-    if (nextScenario.scenario.includes("diary")) {
-      setDiaryFound(true);
-    }
-
-    // If the diary has been found, skip scenarios that involve finding the diary again
-    if (diaryFound && (nextId === 7 || nextId === 32 || nextId === 44)) {
-      const alternativeScenario = storyData.find((scenario) => scenario.id === 21);
-      console.log('Skipping diary scenario, going to scenario ID 21');
-      setCurrentScenario(alternativeScenario);
-    } else {
-      console.log('Going to scenario ID:', nextScenario.id);
-      setCurrentScenario(nextScenario);
-    }
+    setCurrentScenario(nextScenario);
   };
 
   const startStory = () => {
@@ -48,7 +31,6 @@ const Quiz = () => {
 
   const restartStory = () => {
     setCurrentScenario(storyData.find((scenario) => scenario.id === 1));
-    setDiaryFound(false);
     setStoryStarted(false);
   };
 
