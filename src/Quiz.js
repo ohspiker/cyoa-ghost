@@ -1,5 +1,4 @@
 // src/Quiz.js
-// olivia handspiker
 import React, { useState, useEffect } from 'react';
 
 const Quiz = () => {
@@ -9,19 +8,36 @@ const Quiz = () => {
   const [diaryFound, setDiaryFound] = useState(false);
 
   useEffect(() => {
-      fetch(`${process.env.PUBLIC_URL}/questions.json`)
-        .then((response) => {
-          if (!response.ok) {
-            throw new Error('Network response was not ok');
-          }
-          return response.json();
-        })
-        .then((data) => {
-          setStoryData(data);
-          setCurrentScenario(data.find((scenario) => scenario.id === 1)); // Start with the first scenario
-        })
-        .catch((error) => console.error('Error fetching story data:', error));
-    }, []);
+    fetch(`${process.env.PUBLIC_URL}/questions.json`)
+      .then((response) => {
+        if (!response.ok) {
+          throw new Error('Network response was not ok');
+        }
+        return response.json();
+      })
+      .then((data) => {
+        setStoryData(data);
+        setCurrentScenario(data.find((scenario) => scenario.id === 1)); // Start with the first scenario
+      })
+      .catch((error) => console.error('Error fetching story data:', error));
+  }, []);
+
+  const handleChoiceClick = (nextId) => {
+    const nextScenario = storyData.find((scenario) => scenario.id === nextId);
+
+    // Check if the next scenario involves the diary
+    if (nextScenario.scenario.includes("diary")) {
+      setDiaryFound(true);
+    }
+
+    // If the diary has been found, skip scenarios that involve finding the diary again
+    if (diaryFound && (nextId === 7 || nextId === 32 || nextId === 44)) {
+      const alternativeScenario = storyData.find((scenario) => scenario.id === 21);
+      setCurrentScenario(alternativeScenario);
+    } else {
+      setCurrentScenario(nextScenario);
+    }
+  };
 
   const startStory = () => {
     setStoryStarted(true);
@@ -61,13 +77,13 @@ const Quiz = () => {
                 dangerouslySetInnerHTML={{ __html: currentScenario.scenario }}
               />
               {currentScenario.image && (
-                <img src={currentScenario.image} alt="Scenario" className='scenario-image' />
+                <img src={`${process.env.PUBLIC_URL}/${currentScenario.image}`} alt="Scenario" className='scenario-image' />
               )}
             </div>
             <div className='answer-section'>
               {currentScenario.choices.map((choice, index) => (
                 <div className="buttonChoice" key={index}>
-                  <button>
+                  <button onClick={() => handleChoiceClick(choice.nextId)}>
                     {choice.text}
                   </button>
                 </div>
