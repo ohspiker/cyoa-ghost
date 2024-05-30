@@ -1,6 +1,6 @@
 // src/App.js
 import React from 'react';
-import './App.css';
+import '%PUBLIC_URL%/App.css';
 import Quiz from './Quiz';
 
 function App() {
