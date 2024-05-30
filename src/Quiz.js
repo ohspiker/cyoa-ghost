@@ -8,7 +8,7 @@ const Quiz = () => {
   const [diaryFound, setDiaryFound] = useState(false);
 
   useEffect(() => {
-    fetch('/questions.json')
+    fetch('./questions.json')
       .then((response) => response.json())
       .then((data) => {
         setStoryData(data);
