@@ -108,7 +108,7 @@
   },
   {
     "id": 14,
-    "scenario": "You decide to fight the ghost, but your attempts are futile. The ghostly figure overwhelms you with a cold, suffocating force. As your vision fades, you hear her laugh. 'You cannot defeat me.' You succumb to the ghost's attack.",
+    "scenario": "Against your better judgement, you attempt to fight the ghost, but your attempts are futile. The ghostly figure overwhelms you with a cold, suffocating force. As your vision fades, you hear her laugh. 'You cannot defeat me.' You succumb to the ghost's attack.",
     "image": "img/ghost.png",
     "choices": [
       { "text": "Try Again?", "nextId": 1 }
@@ -255,7 +255,8 @@
     "id": 32,
     "scenario": "You listen to the music, and the ghostly figure continues to play, its sad eyes watching you. 'Do you think you can bring me peace?' she hisses. You realize that the only way to free her is to uncover her story.<br><br>What do you do?",
     "choices": [
-      { "text": "Promise to uncover her story", "nextId": 44 }
+      { "text": "Promise to uncover her story", "nextId": 44 },
+      { "text": "Fight the ghost", "nextId": 14 }
     ]
   },
   {
@@ -302,7 +303,8 @@
     "id": 38,
     "scenario": "You ask the ghost for more details, and she reveals that her death was not an accident but a murder. She begs you to uncover the truth.<br><br>What do you do?",
     "choices": [
-      { "text": "Promise to uncover the truth", "nextId": 49 }
+      { "text": "Promise to uncover the truth", "nextId": 49 },
+      { "text": "Fight the ghost", "nextId": 14 }
     ]
   },
   {
