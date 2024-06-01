@@ -107,7 +107,7 @@
   },
   {
     "id": 14,
-    "scenario": "You decide to fight the ghost, but your attempts are futile. The ghostly figure overwhelms you with a cold, suffocating force. As your vision fades, you hear her laugh. 'You cannot defeat me.' This is the end.",
+    "scenario": "You decide to fight the ghost, but your attempts are futile. The ghostly figure overwhelms you with a cold, suffocating force. As your vision fades, you hear her laugh. 'You cannot defeat me.' You succumb to the ghost's attack.",
     "image": "img/ghost.png",
     "choices": [
       { "text": "Try Again?", "nextId": 1 }
@@ -163,7 +163,7 @@
   },
   {
     "id": 21,
-    "scenario": "You listen to the record, and the haunting melody fills the room. The ghostly figure of a woman appears, her eyes burning with anger. 'How dare you listen to my song?' she hisses. Before you can react, she lunges at you. This is the end.",
+    "scenario": "You listen to the record, and the haunting melody fills the room. The ghostly figure of a woman appears, her eyes burning with anger. 'How dare you listen to my song?' she hisses. Before you can react, she lunges at you. You succumb to the ghost's attack.",
     "image": "img/ghost.png",
     "choices": [
       { "text": "Try Again?", "nextId": 1 }
@@ -179,7 +179,7 @@
   },
   {
     "id": 23,
-    "scenario": "You turn around slowly and come face to face with a ghostly apparition. The figure looks at you with rage-filled eyes and whispers, 'You will pay for disturbing my music.' She reaches out with a cold, ghostly hand. This is the end.",
+    "scenario": "You turn around slowly and come face to face with a ghostly apparition. The figure looks at you with rage-filled eyes and whispers, 'You will pay for disturbing my music.' She reaches out with a cold, ghostly hand. You succumb to the ghost's attack.",
     "image": "img/ghost.png",
     "choices": [
       { "text": "Try Again?", "nextId": 1 }
@@ -212,7 +212,7 @@
   },
   {
     "id": 27,
-    "scenario": "You fight the ghost, but your attempts are futile. The ghostly figure overwhelms you with a cold, suffocating force. As your vision fades, you hear her laugh. 'You cannot defeat me.' This is the end.",
+    "scenario": "You fight the ghost, but your attempts are futile. The ghostly figure overwhelms you with a cold, suffocating force. As your vision fades, you hear her laugh. 'You cannot defeat me.' You succumb to the ghost's attack.",
     "image": "img/leave.png",
     "choices": [
       { "text": "Try Again?", "nextId": 1 }
@@ -291,7 +291,7 @@
   },
   {
     "id": 37,
-    "scenario": "You stay in the room, but the feeling of being watched grows stronger. Suddenly, the hidden door slams shut, trapping you inside. This is the end.",
+    "scenario": "You stay in the room, but the feeling of being watched grows stronger. Suddenly, the hidden door slams shut, trapping you inside.",
     "image": "img/ghost.png",
     "choices": [
       { "text": "Try Again?", "nextId": 1 }
@@ -322,7 +322,7 @@
   },
   {
     "id": 41,
-    "scenario": "You stay despite Eris' request to leave, and the ghost becomes more aggressive. She does not want you to linger. Suddenly, the walls start to close in, and you realize too late that you are trapped. This is the end.",
+    "scenario": "You stay despite Eris' request to leave, and the ghost becomes more aggressive. She does not want you to linger. Suddenly, the walls start to close in, and you realize too late that you are trapped with no way out.",
     "image": "img/ghost.png",
     "choices": [
       { "text": "Try Again?", "nextId": 1 }
@@ -338,7 +338,7 @@
   },
   {
     "id": 43,
-    "scenario": "You stay despite Eris' request to leave, and the ghost becomes more aggressive. She does not want you to linger. Suddenly, the walls start to close in, and you realize too late that you are trapped. This is the end.",
+    "scenario": "You stay despite Eris' request to leave, and the ghost becomes more aggressive. She does not want you to linger. Suddenly, the walls start to close in, and you realize too late that you are trapped with no way out.",
     "image": "img/ghost.png",
     "choices": [
       { "text": "Try Again?", "nextId": 1 }
