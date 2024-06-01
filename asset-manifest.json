@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/cyoa-ghost/static/css/main.b3833fd1.css",
+    "main.css": "/cyoa-ghost/static/css/main.f05940e4.css",
     "main.js": "/cyoa-ghost/static/js/main.0494aeba.js",
     "static/js/453.2b0627e5.chunk.js": "/cyoa-ghost/static/js/453.2b0627e5.chunk.js",
     "static/media/bg.jpg": "/cyoa-ghost/static/media/bg.b64cab8066de9d15763e.jpg",
     "index.html": "/cyoa-ghost/index.html",
-    "main.b3833fd1.css.map": "/cyoa-ghost/static/css/main.b3833fd1.css.map",
+    "main.f05940e4.css.map": "/cyoa-ghost/static/css/main.f05940e4.css.map",
     "main.0494aeba.js.map": "/cyoa-ghost/static/js/main.0494aeba.js.map",
     "453.2b0627e5.chunk.js.map": "/cyoa-ghost/static/js/453.2b0627e5.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.b3833fd1.css",
+    "static/css/main.f05940e4.css",
     "static/js/main.0494aeba.js"
   ]
 }
