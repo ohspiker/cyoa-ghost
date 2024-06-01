@@ -330,7 +330,7 @@
   },
   {
     "id": 42,
-    "scenario": "You leave with the diary and expose the truth about Eris' tragic death. The public is outraged, and the theatre becomes a historical site. Eris' spirit is finally at peace.<br><br>You did it. This is a good ending.",
+    "scenario": "You leave with the diary and expose the truth about Eris' tragic death. The public is outraged, and the theatre becomes a historical site. Eris' spirit is finally at peace.<br><br>You did it.",
     "image": "img/leave.png",
     "choices": [
       { "text": "Try Again?", "nextId": 1 }
@@ -346,7 +346,7 @@
   },
   {
     "id": 44,
-    "scenario": "You promise to uncover her story, and as you look deeper into the theatre's history, you find the evidence needed to clear her name. Eris' spirit appears before you, thanking you for bringing her peace.<br><br>This is a good ending.",
+    "scenario": "You promise to uncover her story, and as you look deeper into the theatre's history, you find the evidence needed to clear her name. Eris' spirit appears before you, thanking you for bringing her peace.",
     "image": "img/leave.png",
     "choices": [
       { "text": "Try Again?", "nextId": 1 }
@@ -386,7 +386,7 @@
   },
   {
     "id": 49,
-    "scenario": "You promise to uncover the truth, and as you investigate further, you find evidence that reveals the true culprit behind Eris' death. You take this evidence to the authorities, who finally clear her name. Eris' spirit appears before you, smiling with gratitude.<br><br>This is a good ending.",
+    "scenario": "You promise to uncover the truth, and as you investigate further, you find evidence that reveals the true culprit behind Eris' death. You take this evidence to the authorities, who finally clear her name. Eris' spirit appears before you, smiling with gratitude.",
     "image": "img/leave.png",
     "choices": [
       { "text": "Try Again?", "nextId": 1 }
