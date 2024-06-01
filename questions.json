@@ -1,7 +1,7 @@
 [
   {
     "id": 1,
-    "scenario": "As the sun sets, you stand before the imposing facade of the Grand Orpheum Theatre. The air is heavy with the scent of rain and the whispers of forgotten performances. The ornate marquee, now rusted and overgrown with ivy, still holds an air of faded grandeur. You take a deep breath and push open the creaking doors. Inside, the darkness seems to welcome you with open arms.<br><br>What do you do?",
+    "scenario": "As the sun sets, you stand before the imposing facade of the Grand Orpheum Theatre. The air is heavy with the scent of rain and the whispers of forgotten performances. The ornate marquee, now rusted and overgrown with ivy, still holds an air of faded grandeur. You take a deep breath and push open the weathered doors.<br><br>Inside, the darkness and cold air seem to welcome you with open arms.<br><br>What do you do?",
     "choices": [
       { "text": "Turn on your flashlight and explore the lobby", "nextId": 2 },
       { "text": "Call out to see if anyone is there", "nextId": 3 }
@@ -9,7 +9,7 @@
   },
   {
     "id": 2,
-    "scenario": "The beam of your flashlight cuts through the dusty air, illuminating the grand lobby. The once lavish decor now lies in ruins, with shattered chandeliers and tattered drapes. As you move further in, you hear a soft, distant melody echoing through the halls.<br><br>What do you do?",
+    "scenario": "The beam of your flashlight cuts through the dusty air, illuminating the grand lobby. The once lavish decor now lies in ruins, with shattered chandeliers and tattered drapes. As you move further into the lobby, you hear a soft, distant melody echoing through the halls.<br><br>What do you do?",
     "choices": [
       { "text": "Follow the melody towards the main hall", "nextId": 4 },
       { "text": "Investigate the source of the sound", "nextId": 5 }
@@ -17,10 +17,11 @@
   },
   {
     "id": 3,
-    "scenario": "Your voice echoes through the vast, empty space, but no response comes. The silence is oppressive, almost as if the theatre itself is holding its breath. Suddenly, you hear a faint whisper, barely audible, coming from the direction of the stage.<br><br>What do you do?",
+    "scenario": "Your voice echoes through the vast, empty space, but no response comes. The silence is oppressive, almost as if the theatre itself is holding its breath. Cutting through the silence, you hear a faint whisper, barely audible, coming from the direction of the stage.<br><br>What do you do?",
     "choices": [
       { "text": "Approach the stage cautiously", "nextId": 6 },
       { "text": "Ignore the whisper and explore the seating area", "nextId": 7 }
+      { "text": "Shout out to the voice", "nextId": 51 }
     ]
   },
   {
@@ -99,7 +100,7 @@
   },
   {
     "id": 13,
-    "scenario": "You try to communicate with the ghost, asking why it is haunting the theatre. The ghostly figure becomes more distinct, revealing a woman with a sorrowful yet enraged expression. 'You think you can understand my pain?' she snarls.<br><br>What do you do?",
+    "scenario": "You try to communicate with the ghost, asking why it is haunting the theatre. The ghostly figure becomes more distinct, revealing a woman with a sorrowful yet rageful expression. 'You think you can understand my pain?' she snarls.<br><br>What do you do?",
     "choices": [
       { "text": "Ask how you can help", "nextId": 25 },
       { "text": "Run away", "nextId": 26 }
@@ -195,7 +196,7 @@
   },
   {
     "id": 25,
-    "scenario": "The ghost looks at you with burning eyes and whispers, 'Find my diary... it holds the key to my vengeance.' You remember seeing a diary in the lobby.<br><br>What do you do?",
+    "scenario": "The ghost looks at you with burning eyes and whispers, 'Find my diary... it holds the truth.' You remember seeing a diary in the lobby.<br><br>What do you do?",
     "choices": [
       { "text": "Go to the lobby and find the diary", "nextId": 20 },
       { "text": "Ask the ghost for more details", "nextId": 38 },
@@ -275,7 +276,7 @@
   },
   {
     "id": 35,
-    "scenario": "You take the diary and leave the theatre. Outside, you feel the weight of Eris' story and know you must share it with the world.<br><br>As you walk away, the theatre looms behind you, a testament to the stories it holds.",
+    "scenario": "You take the diary and leave the theatre. Outside, you feel the weight of Eris' story and know you must share it with the world.<br><br>As you walk away, the theatre looms behind you, and you promise to reveal the truth, in time.",
     "image": "img/leave.png",
     "choices": [
       { "text": "Try Again?", "nextId": 1 }
@@ -396,8 +397,25 @@
     "id": 50,
     "scenario": "You search for another exit and find a hidden door leading to a secret passage. As you follow the passage, you find yourself in a hidden room filled with Eris' possessions. You realize you have uncovered the heart of the mystery.<br><br>What do you do?",
     "choices": [
-      { "text": "Examine the possessions", "nextId": 47 },
+      { "text": "Examine the possessions", "nextId": 47 }
+    ]
+  },
+{
+    "id": 51,
+    "scenario": "You shout out to the voice, calling for the source to reveal itself. To your surprise, you hear it again, calling more clearly in turn. 'Leave,' it calls in a voice that chills you. 'Leave this place!' It continues. You feel a deep fear set in.<br><br>What do you do?",
+    "choices": [
+      { "text": "Search for the source of the voice", "nextId": 52 }
       { "text": "Leave the theatre", "nextId": 31 }
     ]
+  },
+{
+    "id": 52,
+    "scenario": "You steel your nerves and continue in the direction of the voice. What you find shocks and confuses you. A ghostly figure of a woman appears before you, speaking in the same chilling voice that you have already heard. 'You are braver than most. Perhaps you can assist me.' She comments.<br><br>What do you do?",
+    "choices": [
+      { "text": "Ask how you can help her", "nextId": 25 },
+      { "text": "Run away", "nextId": 26 },
+      { "text": "Fight the ghost", "nextId": 27 }
+    ]
   }
+
 ]
