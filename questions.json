@@ -20,7 +20,7 @@
     "scenario": "Your voice echoes through the vast, empty space, but no response comes. The silence is oppressive, almost as if the theatre itself is holding its breath. Cutting through the silence, you hear a faint whisper, barely audible, coming from the direction of the stage.<br><br>What do you do?",
     "choices": [
       { "text": "Approach the stage cautiously", "nextId": 6 },
-      { "text": "Ignore the whisper and explore the seating area", "nextId": 7 }
+      { "text": "Ignore the whisper and explore the seating area", "nextId": 7 },
       { "text": "Shout out to the voice", "nextId": 51 }
     ]
   },
